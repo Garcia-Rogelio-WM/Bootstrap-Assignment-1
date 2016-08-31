@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body onload="add()">
+<body onload="assignGrade();">
 <script>
+    function assignGrade(){
+        var grade = prompt("What percent did you get?");
 
-    function add() {
-        var one = 1;
-        var two = 2;
-        var sum = one + two;
-        alert(one + " + " +two+ " = " +sum);
+        score = parseInt(grade);
+
+        if (score <= 59) {
+            alert("You received an F");
+        }
+    else if (score >= 60 && score <= 69){
+        alert("You received a D");
     }
-
-
+    else if (score >= 70 && score <= 79){
+        alert("You received a C");
+    }
+    else if (score >= 80 && score <= 89){
+        alert("You received a B");
+    }
+    else if (score >= 90){
+        alert("You received an A");
+    }
+    }
 </script>
 </body>
 </html>

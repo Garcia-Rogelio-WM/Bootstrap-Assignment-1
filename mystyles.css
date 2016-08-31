@@ -30,6 +30,7 @@ body{
 }
 .navbar-inverse {
     background: #303F9F;
+    opacity: .95;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
@@ -45,4 +46,14 @@ body{
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
     color:#000000;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.affix {
+    top:100px;
 }
